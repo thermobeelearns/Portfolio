@@ -1,0 +1,420 @@
+/*General Styles*/
+
+body {
+  background-color: #292a2e;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1.2em;
+  color: #08a1db;
+  margin-bottom: 20px;
+}
+
+
+/*Nav Styles*/
+
+nav {
+  background-color: #0289cd;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  width: 960px;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav li:first-child a {
+  margin-left: 40px;
+}
+
+nav li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+/*Name and Picture Header Styles*/
+
+#title {
+  color: #fff;
+  background-color: #08a1db;
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.title-container {
+  margin: 0 0 0 40px;
+  flex: 4;
+}
+
+.title-img {
+  flex: 1;
+}
+
+.title-img img {
+  width: 125px;
+  height: auto;
+  border-radius: 100%;
+}
+
+
+/*Objective Styles*/
+
+#objective {
+  background-color: #576268;
+  color: #fff;
+  width: 960px;
+  margin: 0 auto;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  -webkit-box-shadow: inset 0px 10px 10px 0px #505565;
+  box-shadow: inset 0px 10px 10px 0px #505565;
+}
+
+#objective span {
+  font-size: 1.2em;
+}
+
+
+/*Resume Main Styles*/
+
+#resume {
+  display: flex;
+  align-items: stretch;
+  margin: 0 auto;
+  width: 960px;
+  box-sizing: border-box;
+}
+
+aside {
+  flex: 1;
+  background-color: #ebf7fe;
+  box-sizing: border-box;
+  padding: 30px 20px 0 40px;
+  -webkit-box-shadow: 10px 0px 5px -5px #ccc;
+  box-shadow: 10px 0px 5px -5px #ccc;
+  z-index: 1;
+}
+
+aside section {
+  margin-bottom: 30px;
+}
+
+aside dt {
+  width: 115px;
+  font-weight: bold;
+}
+
+aside dt,
+dd {
+  display: inline-block;
+}
+
+#personal h4 {
+  margin-bottom: 10px;
+}
+
+#personal div {
+  border-bottom: 1px solid #ccc;
+  padding: 9px 0;
+}
+
+
+/*Software Section Styles*/
+
+#software dl div dt {
+  font-weight: 100;
+}
+
+#software dd {
+  background: #ccc;
+  border-radius: 1px;
+  height: 10px;
+  width: 125px;
+  padding: 1px;
+}
+
+#software dd span {
+  content: '';
+  display: block;
+  background: #08a1db;
+  height: 100%;
+  border-radius: 1px;
+}
+
+
+/*Hobbies Section Styles*/
+
+.glyphicon {
+  font-size: 5em;
+}
+
+#hobbies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#hobbies div {
+  margin-right: 10px;
+}
+
+#hobbies div p {
+  text-align: center;
+}
+
+
+/*Main Section Styles*/
+
+main {
+  flex: 2.5;
+  background-color: #f7f7f7;
+}
+
+
+/*Work Section Styles*/
+
+#work {
+  margin: 40px 30px 0 40px;
+}
+
+.entry p:first-of-type {
+  font-weight: bold;
+}
+
+.entry p {
+  margin: 0 0 1em;
+}
+
+.entry p:last-child {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1em;
+  margin: 0;
+}
+
+#work ul {
+  padding: 0;
+  margin-left: 15px;
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.entry {
+  list-style: none;
+  position: relative;
+  border-left: 3px solid #08a1db;
+  padding: 0 0 0 25px;
+}
+
+.entry:not(:last-child) {
+  padding-bottom: 25px;
+}
+
+
+/*Draw the circles two circles and position them on top of each other*/
+
+.entry::after {
+  width: 10px;
+  height: 10px;
+  transform: translate(calc(-50% - 1.5px), 100%);
+}
+
+.entry::before {
+  width: 30px;
+  height: 30px;
+  opacity: .5;
+  transform: translate(calc(-50% - 2px), 0);
+}
+
+.entry::before,
+.entry::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  border-radius: 50%;
+  background: #08a1db;
+}
+
+
+/*Skills Section Styles*/
+
+#skills {
+  margin: 25px 30px 0 40px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.outer {
+  font-size: 20px;
+  margin: 20px;
+  position: relative;
+  padding: 0;
+  width: 5em;
+  height: 5em;
+  background-color: #F2E9E1;
+  border-radius: 50%;
+  line-height: 5em;
+}
+
+.outer:after {
+  border: none;
+  position: absolute;
+  top: 0.35em;
+  left: 0.35em;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  width: 4.3em;
+  height: 4.3em;
+  background-color: white;
+  content: " ";
+}
+
+.outer span {
+  position: absolute;
+  line-height: 5em;
+  width: 5em;
+  text-align: center;
+  display: block;
+  color: #08a1db;
+  z-index: 2;
+}
+
+.inner {
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  position: absolute;
+  /* needed for clipping */
+  clip: rect(0, 5em, 5em, 2.5em);
+  /* clips the whole left half*/
+}
+
+.value-bar {
+  /*This is an overlayed square, that is made round with the border radius,
+   then it is cut to display only the left half, then rotated clockwise
+   to escape the outer clipping path.*/
+  position: absolute;
+  /*needed for clipping*/
+  clip: rect(0, 2.5em, 5em, 0);
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border: 0.45em solid #08a1db;
+  /*The border is 0.35 but making it larger removes visual artifacts */
+  /*background-color: #4D642D;*/
+  /* for debug */
+  box-sizing: border-box;
+}
+
+
+/* Progress bar rotation position */
+
+.outer.p50 .value-bar {
+  transform: rotate(180deg);
+}
+
+.outer.p60 .value-bar {
+  transform: rotate(216deg);
+}
+
+.outer.p70 .value-bar {
+  transform: rotate(252deg);
+}
+
+.outer.p80 .value-bar {
+  transform: rotate(288deg);
+}
+
+.outer.p90 .value-bar {
+  transform: rotate(324deg);
+}
+
+
+/*Education Section Styles*/
+
+#education {
+  margin: 25px 30px 0 40px;
+}
+
+#education ul {
+  padding-left: 15px;
+}
+
+
+/*Social Media Section Styles*/
+
+#social-media {
+  background-color: #08a1db;
+  width: 960px;
+  margin: 0 auto;
+}
+
+#social-media {
+  display: flex;
+  justify-content: center;
+}
+
+#social-media a {
+  background-color: #0289cd;
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  margin: 30px 50px;
+  text-align: center;
+  padding-top: 9px;
+}
+
+#social-media a i {
+  color: white;
+}
+
+#social-media a i:hover {
+  color: #08a1db;
+}
+
+
+/*Footer Styles*/
+
+footer {
+  background-color: #0289cd;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
