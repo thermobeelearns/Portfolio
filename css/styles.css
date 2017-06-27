@@ -246,7 +246,7 @@ main {
 }
 
 
-/*Draw the circles two circles and position them on top of each other*/
+/*Draw two circles and position them on top of each other*/
 
 .entry::after {
   width: 10px;
@@ -327,10 +327,8 @@ main {
   clip: rect(0, 5em, 5em, 2.5em);
 }
 
-
-/*when p>50, dont clip left half*/
-
 .progress-circle.over50 .left-half-clipper {
+  /*when p>50, dont clip left half*/
   clip: rect(auto, auto, auto, auto);
 }
 
@@ -389,6 +387,102 @@ main {
 }
 
 
+/*Portfolio Section Styles*/
+
+#portfolio {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+#portfolio h3 {
+  margin: 0;
+  display: block;
+}
+
+#portfolio section {
+  display: flex;
+  padding: 30px;
+}
+
+.project1 {
+  border-left: 1px solid #444;
+  border-bottom: 1px solid #444;
+  margin: 0 30px;
+}
+
+.project1:before {
+  content: "01";
+  position: absolute;
+  left: 15px;
+  top: 175px;
+  font-size: 2em;
+  font-family: Montserrat, sans-serif;
+  background-color: #f7f7f7;
+  padding: 15px 0;
+}
+
+.project2 {
+  border-right: 1px solid #444;
+  border-bottom: 1px solid #444;
+  margin: 0 30px;
+}
+
+.project2:before {
+  content: "02";
+  position: absolute;
+  left: 915px;
+  top: 655px;
+  font-size: 2em;
+  font-family: Montserrat, sans-serif;
+  background-color: #f7f7f7;
+  padding: 15px 0;
+}
+
+.project3 {
+  border-left: 1px solid #444;
+  border-bottom: 1px solid #444;
+  margin: 0 30px;
+}
+
+.project3:before {
+  content: "03";
+  position: absolute;
+  left: 15px;
+  top: 1100px;
+  font-size: 2em;
+  font-family: Montserrat, sans-serif;
+  background-color: #f7f7f7;
+  padding: 15px 0;
+}
+
+.project4 {
+  border-right: 1px solid #444;
+  margin: 0 30px;
+}
+
+.project4:before {
+  content: "04";
+  position: absolute;
+  left: 915px;
+  top: 1575px;
+  font-size: 2em;
+  font-family: Montserrat, sans-serif;
+  background-color: #f7f7f7;
+  padding: 15px 0;
+}
+
+#portfolio img {
+  flex: 3;
+}
+
+.project-container {
+  flex: 2;
+  padding: 15px;
+}
+
+
 /*Social Media Section Styles*/
 
 #social-media {
@@ -426,16 +520,4 @@ main {
 
 #social-media a i:hover {
   color: #08a1db;
-}
-
-
-/*Footer Styles*/
-
-footer {
-  background-color: #0289cd;
-  text-transform: uppercase;
-  color: #fff;
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
