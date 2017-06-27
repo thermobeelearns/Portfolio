@@ -77,7 +77,7 @@ nav li a {
 
 .title-container {
   margin: 0 0 0 40px;
-  flex: 3.5;
+  flex: 3;
 }
 
 .title-img {
@@ -85,8 +85,8 @@ nav li a {
 }
 
 .title-img img {
-  width: 145px;
-  height: 145px;
+  width: 185px;
+  height: 185px;
   border-radius: 50%;
 }
 
