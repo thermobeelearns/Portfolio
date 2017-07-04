@@ -1,0 +1,23 @@
+{
+  "name": "todlazarov",
+  "version": "1.0.0",
+  "description": "My Portfolio page",
+  "main": "server.js",
+  "scripts": {
+    "test": "no test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://thermobeelearns:techno51@github.com/thermobeelearns/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "todlazarov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thermobeelearns/Portfolio/issues"
+  },
+  "homepage": "https://github.com/thermobeelearns/Portfolio#readme"
+}

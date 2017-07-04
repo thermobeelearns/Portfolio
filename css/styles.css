@@ -389,6 +389,10 @@ main {
 
 /*Portfolio Section Styles*/
 
+section {
+  
+}
+
 #portfolio {
   width: 960px;
   margin: 0 auto;
@@ -399,11 +403,69 @@ main {
 #portfolio h3 {
   margin: 0;
   display: block;
+  margin-bottom: 15px;
 }
 
 #portfolio section {
   display: flex;
   padding: 30px;
+}
+
+#portfolio img {
+  width: 75%;
+  height: 450px;
+  opacity: 0.3;
+}
+
+#portfolio .project2 img,
+#portfolio .project4 img {
+  width: 75%;
+  height: 450px;
+  position: relative;
+  left: 26%;
+}
+
+.project1 .project-container,
+.project3 .project-container {
+  left: 55%;
+  height: 300px;
+  position: absolute;
+  z-index: 1;
+  width: 45%;
+  transition: .8s;
+  padding: 30px;
+  color: #000;
+}
+
+.project2 .project-container,
+.project4 .project-container {
+  left: 0;
+  height: 300px;
+  position: absolute;
+  z-index: 1;
+  width: 45%;
+  transition: .8s;
+  padding: 30px;
+  color: #000;
+  margin-left: 20px;
+}
+
+.project1:hover .project-container,
+.project3:hover .project-container {
+  width: 29%;
+  left: 70%;
+}
+
+.project2:hover .project-container,
+.project4:hover .project-container {
+  width: 29%;
+}
+
+#portfolio section:hover img {
+  opacity: 1;
+  -webkit-transition: opacity .8s ease-in-out;
+  -moz-transition: opacity .8s ease-in-out;
+  transition: opacity .8s ease-in-out;
 }
 
 .project1 {
@@ -416,7 +478,7 @@ main {
   content: "01";
   position: absolute;
   left: 15px;
-  top: 175px;
+  top: 200px;
   font-size: 2em;
   font-family: Montserrat, sans-serif;
   background-color: #f7f7f7;
@@ -433,7 +495,7 @@ main {
   content: "02";
   position: absolute;
   left: 915px;
-  top: 655px;
+  top: 735px;
   font-size: 2em;
   font-family: Montserrat, sans-serif;
   background-color: #f7f7f7;
@@ -450,7 +512,7 @@ main {
   content: "03";
   position: absolute;
   left: 15px;
-  top: 1100px;
+  top: 1230px;
   font-size: 2em;
   font-family: Montserrat, sans-serif;
   background-color: #f7f7f7;
@@ -466,20 +528,11 @@ main {
   content: "04";
   position: absolute;
   left: 915px;
-  top: 1575px;
+  top: 1755px;
   font-size: 2em;
   font-family: Montserrat, sans-serif;
   background-color: #f7f7f7;
   padding: 15px 0;
-}
-
-#portfolio img {
-  flex: 3;
-}
-
-.project-container {
-  flex: 2;
-  padding: 15px;
 }
 
 
@@ -515,7 +568,7 @@ main {
 }
 
 #social-media a i {
-  color: white;
+  color: #fff;
 }
 
 #social-media a i:hover {
