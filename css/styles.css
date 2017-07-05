@@ -91,6 +91,26 @@ nav li a {
 }
 
 
+/*Hello/Cover Letter Section Styles*/
+
+.container-hello {
+  width: 960px;
+  margin: 0 auto;
+  padding: 15px 40px;
+}
+
+.container-hello h3,
+.container-hello h5 {
+  font-style: italic;
+}
+
+.container-hello img {
+  display: block;
+  width: 200px;
+  height: auto;
+}
+
+
 /*Objective Styles*/
 
 #objective {
@@ -389,9 +409,7 @@ main {
 
 /*Portfolio Section Styles*/
 
-section {
-  
-}
+section {}
 
 #portfolio {
   width: 960px;
