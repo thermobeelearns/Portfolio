@@ -13,7 +13,6 @@ router.get('/hello', function (req, res) {
 	res.sendFile(appRoot + '/hello.html');
 });
 
-
 router.get('/resume', function (req, res) {
 	res.sendFile(appRoot + '/resume.html');
 });

@@ -66,6 +66,10 @@ nav li a {
   padding-bottom: 7px;
 }
 
+nav li a:hover {
+  text-decoration: none;
+}
+
 
 /*Name and Picture Header Styles*/
 
