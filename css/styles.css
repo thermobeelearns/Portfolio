@@ -101,18 +101,22 @@ nav li a {
 .container-hello {
   width: 960px;
   margin: 0 auto;
-  padding: 15px 40px;
+  padding: 15px 60px;
 }
 
-.container-hello h3,
-.container-hello h5 {
+.container-hello h3 {
   font-style: italic;
+}
+
+.container-hello p {
+  font-size: 16px;
 }
 
 .container-hello img {
   display: block;
   width: 200px;
   height: auto;
+  margin-bottom: 30px;
 }
 
 
